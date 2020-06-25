@@ -1,0 +1,31 @@
+.main-chat 
+  .main-chat__group
+    .main-chat__group__name
+      test
+      .main-chat__group__name__list
+        .main-chat__group__name__list__member
+          member : 
+        .main-chat__group__name__list__main-member
+          tom
+    .main-chat__group__edit
+      edit
+
+  .main-chat__message-list
+    .main-chat__message-list__message-box
+      .main-chat__message-list__message-box__message-info
+        .main-chat__message-list__message-box__message-info__user-name
+          john
+        .main-chat__message-list__message-box__message-info__info-date
+          1940年06月32日21時35分
+      .main-chat__message-list__message-box__message-info__message
+        .main-chat__message-list__message-box__message-info__message__message-content
+          hell ya
+
+  .main-chat__message__form
+    %form.new-message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", value: "SEND", class: "submit-btn"}
